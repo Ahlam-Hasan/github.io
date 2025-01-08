@@ -1,0 +1,117 @@
+@import './sizes';
+@import './fonts';
+
+@mixin Bg-And-Font-Wheight{
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    margin: 0;
+    font-size: size(l);
+    font-family: $satisfy;
+    @include Bg-And-Font-Wheight();
+}
+
+h2{
+    @include Bg-And-Font-Wheight();
+    font-family: $varela;
+    font-size: size(m);
+}
+
+h3{
+    @include Bg-And-Font-Wheight();
+    font-family: $varela;
+    font-size: size(s);
+}
+
+.background{
+    background: -ms-linear-gradient(#281EFF, #2DFF8C);
+    background: -o-linear-gradient(#281EFF, #2DFF8C);
+    background: -moz-linear-gradient(#281EFF, #2DFF8C);
+    background: -webkit-linear-gradient(#281EFF, #2DFF8C);
+    background: linear-gradient(#281EFF, #2DFF8C);;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formDiv{
+    width: 800px;
+    height: 300px;
+    margin: auto;  
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.formDocument{
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    font-size: size(s);
+    @include Bg-And-Font-Wheight();
+    font-family: $varela;
+    text-align: right;
+    gap: 10px;
+}
+
+input{
+    width: 418px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    background-color: #F6F6F624;
+}
+
+
+input[type=submit]{
+    width: 206px;
+    height: 50px;
+    background-color: #FFFFFF;
+    font-family: $varela;
+    font-size: size(s);
+    margin-top: 22px;
+}
+
+
+@media screen and (max-width: 1130px){
+    .background{
+        position: relative;
+    }
+    .formDiv{
+        position: absolute;
+        width: 60%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .formDocument{
+        flex-direction: column;
+        width: 100%;
+      }
+      input{
+        width: 100%;
+      }
+    h1 {
+        font-size: size(min-l);
+      }
+      
+      h2 {
+        font-size: size(s);
+      }
+      
+      h3 {
+        font-size: size(min-m);
+      }
+      label{
+        font-size: size(min-s)
+      } 
+}
