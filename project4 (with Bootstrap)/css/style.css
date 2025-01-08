@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+html, body{
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+    direction: rtl;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.row{
+    height: 100%;
+}
+
+.telImage{
+    margin: auto; 
+}
+
+.formDetails{
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+}
+
+h1{
+    color: #FDBD03;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+p{
+    color: #020253;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+label{
+    color: #2C2C2C;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.special-style{
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 4px solid #FDBD03;
+    height: 40px;
+}
+
+#aboutMe{
+    height: 120px;
+}
+
+.first-row{
+    gap: 15px;
+}
+
+.sumbit-button{
+    width: 166px;
+    height: 50px;
+    border: none;
+    background-color: #FDBD03;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    text-align: center;
+}
+
+.cut-width{
+    width: 94%;
+}
+
+i{
+    color: black;
+}
+
+.icon{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDBD03;
+}
+
+.additional-icon-style{
+    margin: 10px;
+    font-size: 20px;
+    bottom: 0;
+    position: fixed;
+}
+
+.whatsapp-icon{
+    left: 0;
+    margin: 30px;
+    font-size: 20px;
+    position: fixed;
+}
+
+.phone-icon{
+    left: 20%;
+}
+
+.linkedin-icon{
+    left: 15%; 
+}
+
+.instagram-icon{
+    left: 10%;
+}
+
+.facebook-icon{
+    left: 5%;
+}
+
+@media screen and (max-width: 990px){
+    .container{
+        height: fit-content;
+    }
+    .first-row{
+        display: block !important;
+    }
+    .inner-input{
+        width: 100%;
+    }
+    .cut-width{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    p{
+        font-size: 15px;
+        text-align: center;
+    }
+    label{
+        font-size: 10px;
+    }
+    .sumbit-button{
+        height: 37px;
+        width: 100%;
+        font-size: 15px;
+        border-radius: 0;
+        margin-bottom: 10px;
+    }
+    .phone-icon{
+        position: static;
+        left: auto;
+    }
+    .linkedin-icon{
+        position: static;
+        left: auto;
+    }
+    .instagram-icon{
+        position: static;
+        left: auto;
+    }
+    .facebook-icon{
+        position: static;
+        left: auto;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+    }
+    .whatsapp-icon{
+        display: none;
+    }
+    
+}
+
+
+

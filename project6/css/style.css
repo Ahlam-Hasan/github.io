@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+html, body{
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+    direction: rtl;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 30px;
+    color: #0EE1E1;
+    font-weight: 900;
+}
+
+p{
+    font-size: 15px;
+    font-weight: normal;
+    width: 80%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: black;
+}
+
+.hero-section{
+    background-color: #0EE1E1;
+}
+
+.content-div{
+    float: left;
+    width: 50%;
+    background-color: #0EE1E1;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    height: 350px;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.boxImage-div{
+    float: right;
+    width: 50%;
+    height: 100vh;
+    background-color: #0EE1E1;
+    position: relative;
+    height: 350px;
+}
+
+.boxImage-img{
+    width: 242px;
+    height: 200px;
+    position: absolute;
+    background-image: url('../img/download-min-removebg-preview.png');
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.regions-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.regions-section p{
+    font-size: 15px;
+}
+
+.size{
+    width: 296px;
+    height: 271px;
+    font-size: 35px;
+    background-color: #F8F8F8;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.map-div{
+    float: right;
+    width: 50%;
+    background-color: #0EE1E1;
+    position: relative;
+    height: 530px;
+}
+
+.map{
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+}
+
+.formDiv{
+    float: right;
+    width: 50%;
+    background-color: #F0FFFF; 
+    height: 530px;
+    margin: auto;
+    position: relative;
+}
+
+.form{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formDetails{
+    text-align: right;
+}
+
+label{
+    color: #2C2C2C;
+    font-size: 16px;
+}
+
+input{
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 4px solid #0EE1E1;
+    width: 100%;
+    height: 50px;
+}
+
+input[type=submit]{
+    width: 100%;
+    height: 50px;
+    background-color: #0EE1E1;
+    text-align: center;
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Heebo", sans-serif;
+    border: none;
+}
+
+.icons{
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+}
+
+.icon {
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0EE1E1;
+}
+
+.additional-icon-style {
+    font-size: 20px;
+}
+
+.phone-icon{
+    position: static;
+    left: auto;
+}
+
+.linkedin-icon{
+    position: static;
+    left: auto;
+}
+
+.instagram-icon{
+    position: static;
+    left: auto;
+}
+
+.facebook-icon{
+    position: static;
+    left: auto;
+}
+
+.whatsapp-icon{
+    position: absolute;
+    background-color: white;
+    left: 0;
+    margin: 30px;
+    font-size: 15px;
+}
+
+.whatsapp-icon i{
+    font-weight: 500 !important;
+    font-size: 30px;
+}
+
+.space{
+    height: 20px;
+}
+
+.final-line{
+    height: 25px;
+    width: 100%;
+    background-color: #0EE1E1;
+}
+
+@media screen and (max-width: 660px) {
+    h1{
+        font-size: 41px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .boxImage-img{
+        background-image: url(../img/min-min.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxImage-div{
+        height: 195px;
+        padding-right: 25%;
+    }
+    .content-div{
+        height: 195px;
+        margin: 0;
+        width: 100%;
+    }
+    .content{
+        padding-right: 15%;
+    }
+    .whatsapp-icon{
+        display: none;
+    }
+    .map-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .map-div{
+        width: 100%;
+    }
+    .formDiv{
+        margin: 0;
+        width: 100%;
+    }
+    .form{
+        position: static;
+        margin-right: 5%;
+        transform: none;
+    }
+    input{
+        width: 80%;
+    }
+    input[type=submit]{
+        width: 80%;
+    }
+    .icons{
+        width: auto;
+    }
+}
+
+
